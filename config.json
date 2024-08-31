@@ -1,0 +1,54 @@
+{
+    "window": {
+        "width": 800,
+        "height": 600,
+        "title": "Interactive Learning Game"
+    },
+    "assets": {
+        "sprites": {
+            "texture": "assets/sprites/Texture/",
+            "prototype": "assets/sprites/prototype/",
+            "buildings": "assets/sprites/buildings/"
+        },
+        "fonts": "assets/fonts/Raleway/",
+        "sounds": "assets/sounds/",
+        "music": "assets/music/"
+    },
+    "sprites": {
+        "player": "TX Player.png",
+        "tutor": "TX Props.png",
+        "quizmaster": "TX Props.png",
+        "gamemaster": "TX Props.png",
+        "book": "TX Props.png",
+        "potion": "TX Props.png",
+        "scroll": "TX Props.png",
+        "coin": "TX Props.png",
+        "background": "TX Tileset Grass.png",
+        "tree": "TX Plant.png",
+        "npc1": "TX Player.png",
+        "npc2": "TX Player.png",
+        "npc3": "TX Player.png"
+    },
+    "prototype_sprites": {
+        "tilesheet": "tilesheet.png",
+        "tilesheet_complete": "tilesheet_complete.png",
+        "character": "character.png"
+    },
+    "building_sprites": {
+        "tilesheet": "tilesheet.png",
+        "tilesheet_complete": "tilesheet_complete.png"
+    },
+    "fonts": {
+        "main": "Raleway-Regular.ttf",
+        "bold": "Raleway-Bold.ttf",
+        "italic": "Raleway-Italic.ttf"
+    },
+    "sounds": {
+        "pickup": "pickup.wav",
+        "interact": "interact.wav",
+        "levelup": "levelup.wav"
+    },
+    "music": {
+        "background": "background_music.mp3"
+    }
+}
