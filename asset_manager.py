@@ -1,86 +1,72 @@
 import pygame
-from content.asset_config import get_sprite_path, get_sound_path, SPRITE_MAPPINGS, SOUND_MAPPINGS, FONTS_DIR, get_font_path
 from logger import logger
 import os
+from config import config
 
 class AssetManager:
     def __init__(self):
         self.sprites = {}
-        self.sounds = {}
         self.fonts = {}
+        self.sounds = {}
         self.load_assets()
 
     def load_assets(self):
-        self.load_sprites()
-        self.load_sounds()
-        self.load_fonts()
-
-    def load_sprites(self):
-        for sprite_name in SPRITE_MAPPINGS:
-            sprite_path = get_sprite_path(sprite_name)
-            if sprite_path:
-                try:
-                    self.sprites[sprite_name] = pygame.image.load(sprite_path).convert_alpha()
-                    logger.info(f"Loaded sprite: {sprite_name}")
-                except pygame.error as e:
-                    logger.error(f"Failed to load sprite {sprite_name}: {e}")
-                    self.sprites[sprite_name] = self.create_placeholder_sprite()
-            else:
-                logger.warning(f"Sprite path not found for: {sprite_name}")
-                self.sprites[sprite_name] = self.create_placeholder_sprite()
-
-    def create_placeholder_sprite(self):
-        surface = pygame.Surface((50, 50))
-        surface.fill((255, 0, 255))  # Magenta color for missing sprites
-        return surface
-
-    def load_sounds(self):
-        for sound_name in SOUND_MAPPINGS:
-            sound_path = get_sound_path(sound_name)
-            if sound_path:
-                try:
-                    self.sounds[sound_name] = pygame.mixer.Sound(sound_path)
-                    logger.info(f"Loaded sound: {sound_name}")
-                except pygame.error as e:
-                    logger.error(f"Failed to load sound {sound_name}: {e}")
-            else:
-                logger.warning(f"Sound path not found for: {sound_name}")
-
-    def load_fonts(self):
-        font_sizes = [16, 24, 32, 48]
-        styles = ['regular', 'bold']
-        for size in font_sizes:
-            for style in styles:
-                font_name = f'raleway_{size}'
-                if style == 'bold':
-                    font_name += '_bold'
-                font_path = get_font_path(f'raleway_{style}')
-                if font_path and os.path.exists(font_path):
-                    try:
-                        self.fonts[font_name] = pygame.font.Font(font_path, size)
-                        logger.info(f"Loaded font: {font_name}")
-                    except pygame.error:
-                        logger.error(f"Failed to load font: {font_name}")
-                        self.fonts[font_name] = pygame.font.Font(None, size)
+        # Laden und Skalieren der Sprites
+        for name, file_path in config.sprite_files.items():
+            try:
+                if os.path.exists(file_path):
+                    sprite = pygame.image.load(file_path).convert_alpha()
+                    # Skalieren Sie das Sprite auf eine angemessene Größe
+                    if name in ['player', 'npc']:
+                        sprite = pygame.transform.scale(sprite, (64, 64))  # Beispielgröße für Charaktere
+                    self.sprites[name] = sprite
+                    logger.info(f"Loaded sprite: {name} from {file_path}")
                 else:
-                    logger.warning(f"Font file not found: {font_path}. Using system default.")
-                    self.fonts[font_name] = pygame.font.Font(None, size)
+                    logger.error(f"Sprite file not found: {file_path}")
+            except pygame.error as e:
+                logger.error(f"Konnte Sprite nicht laden: {file_path}. Fehler: {str(e)}")
+
+        # Laden der Schriftarten
+        for name, file_path in config.font_files.items():
+            try:
+                if os.path.exists(file_path):
+                    for size in [24, 32, 48]:
+                        self.fonts[f'{name}_{size}'] = pygame.font.Font(file_path, size)
+                        logger.info(f"Loaded font: {name}_{size}")
+                else:
+                    logger.error(f"Font file not found: {file_path}")
+            except pygame.error as e:
+                logger.error(f"Konnte Schriftart nicht laden: {file_path}. Fehler: {str(e)}")
+
+        # Laden der Sounds
+        for name, file_path in config.sound_files.items():
+            try:
+                if os.path.exists(file_path):
+                    self.sounds[name] = pygame.mixer.Sound(file_path)
+                    logger.info(f"Loaded sound: {name}")
+                else:
+                    logger.error(f"Sound file not found: {file_path}")
+            except pygame.error as e:
+                logger.error(f"Konnte Sound nicht laden: {file_path}. Fehler: {str(e)}")
 
     def get_sprite(self, name):
         sprite = self.sprites.get(name)
         if sprite is None:
-            logger.warning(f"Sprite '{name}' not found in asset manager.")
+            logger.warning(f"Sprite '{name}' nicht gefunden. Verwende Fallback-Sprite.")
+            fallback_sprite = pygame.Surface((64, 64))
+            fallback_sprite.fill((255, 0, 255))  # Magenta als Fallback-Farbe
+            return fallback_sprite
         return sprite
 
-    def get_sound(self, name):
-        return self.sounds.get(name)
-
-    def get_font(self, name, size=24, style='regular'):
-        font_name = f'{name}_{size}'
-        if style == 'bold':
-            font_name += '_bold'
-        font = self.fonts.get(font_name)
+    def get_font(self, name, size, style='regular'):
+        font = self.fonts.get(f'{style}_{size}')
         if font is None:
-            logger.warning(f"Font '{font_name}' not found. Using system default.")
+            logger.warning(f"Font '{style}_{size}' nicht gefunden. Verwende Standardschriftart.")
             font = pygame.font.Font(None, size)
         return font
+
+    def get_sound(self, name):
+        sound = self.sounds.get(name)
+        if sound is None:
+            logger.warning(f"Sound '{name}' nicht gefunden.")
+        return sound
