@@ -28,4 +28,5 @@ env/
 ehthumbs.db
 Thumbs.db
 
-.env
+# API Schlüssel
+.env.txt
