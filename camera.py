@@ -1,4 +1,5 @@
 import pygame
+from logger import logger
 
 class Camera:
     def __init__(self, width, height):
@@ -16,11 +17,10 @@ class Camera:
         x = -target.rect.centerx + int(self.width / 2)
         y = -target.rect.centery + int(self.height / 2)
         
-        # Begrenzen Sie die Kameraposition
-        x = min(0, x)  # Linker Rand
-        y = min(0, y)  # Oberer Rand
-        x = max(-(self.width - self.camera.width), x)  # Rechter Rand
-        y = max(-(self.height - self.camera.height), y)  # Unterer Rand
+        x = min(0, x)
+        y = min(0, y)
+        x = max(-(self.width - self.camera.width), x)
+        y = max(-(self.height - self.camera.height), y)
         
         self.camera = pygame.Rect(x, y, self.width, self.height)
-        print(f"Camera updated: ({self.camera.x}, {self.camera.y})")
+        logger.debug(f"Camera updated: ({self.camera.x}, {self.camera.y})")

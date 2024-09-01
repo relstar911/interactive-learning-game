@@ -1,1 +1,763 @@
-2024-09-01 01:44:16,053 - InteractiveLearningGame - INFO - Starting game
+2024-09-01 05:32:35,982 - InteractiveLearningGame - INFO - Initializing GameEngine
+2024-09-01 05:32:36,719 - InteractiveLearningGame - INFO - GameEngine initialized. Screen size: 800x600
+2024-09-01 05:32:36,726 - InteractiveLearningGame - INFO - Starting the game
+2024-09-01 05:32:36,726 - InteractiveLearningGame - INFO - Pygame initialized
+2024-09-01 05:32:36,726 - InteractiveLearningGame - INFO - Initializing MainMenuScene
+2024-09-01 05:32:36,728 - InteractiveLearningGame - INFO - Main menu scene created
+2024-09-01 05:32:36,728 - InteractiveLearningGame - INFO - Changing scene to MainMenuScene
+2024-09-01 05:32:36,728 - InteractiveLearningGame - INFO - Changed to main menu scene
+2024-09-01 05:32:36,729 - InteractiveLearningGame - INFO - Starting game loop
+2024-09-01 05:32:38,313 - InteractiveLearningGame - INFO - Space key pressed, changing to CharacterCreationScene
+2024-09-01 05:32:38,313 - InteractiveLearningGame - INFO - Changing scene to CharacterCreationScene
+2024-09-01 05:32:39,224 - InteractiveLearningGame - INFO - Player 'sadsa' created at position (400, 300)
+2024-09-01 05:32:39,224 - InteractiveLearningGame - INFO - Changing scene to TutorialScene
+2024-09-01 05:32:39,404 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,404 - InteractiveLearningGame - INFO - Changing scene to GameWorldScene
+2024-09-01 05:32:39,404 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,404 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,404 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,405 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,421 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,421 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,421 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,421 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,437 - InteractiveLearningGame - DEBUG - Key released: return
+2024-09-01 05:32:39,437 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,437 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,437 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,437 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,454 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,454 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,454 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,454 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,470 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,470 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,470 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,470 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,486 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,486 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,486 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,486 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,503 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,503 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,503 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,503 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,519 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,519 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,519 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,519 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,535 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,535 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,535 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,535 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,551 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,551 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,551 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,551 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,567 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,567 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,567 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,567 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,584 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,584 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,584 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,584 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,600 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,600 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,600 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,600 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,617 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,617 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,617 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,617 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,633 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,633 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,633 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,633 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,650 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,650 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,650 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,650 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,666 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,666 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,666 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,666 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,683 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,683 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,683 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,683 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,699 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,699 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,699 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,699 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,716 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,716 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,716 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,716 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,733 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,733 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,733 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,733 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,750 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,750 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,750 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,750 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,766 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,766 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,766 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,766 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,784 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,784 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,784 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,784 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,800 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,800 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,800 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,800 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,817 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,817 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,817 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,817 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,833 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,833 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,833 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,833 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,851 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,851 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,851 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,851 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,867 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,867 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,867 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,867 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,882 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,882 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,882 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,882 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,898 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,898 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,898 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,898 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,914 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,914 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,914 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,914 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,931 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,931 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,931 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,931 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,947 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,947 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,947 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,947 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,965 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,965 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,965 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,965 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,980 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,980 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,980 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,980 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:39,996 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:39,996 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:39,996 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:39,996 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,012 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,012 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,012 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,012 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,029 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,029 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,029 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,029 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,045 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,045 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,045 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,045 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,061 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,061 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,061 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,061 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,078 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,078 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,078 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,078 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,094 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,094 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,094 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,094 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,110 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,110 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,110 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,110 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,127 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,127 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,127 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,127 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,143 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,143 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,143 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,143 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,159 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,159 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,159 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,159 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,176 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,176 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,176 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,176 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,193 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,193 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,193 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,193 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,209 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,209 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,209 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,209 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,225 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,225 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,225 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,225 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Key pressed: up
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Moving player: dx=0, dy=-1
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Player moved: dx=0, dy=-1
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,242 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Player moved: dx=0, dy=-1
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,259 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Player moved: dx=0, dy=-1
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,276 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Player moved: dx=0, dy=-1
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,292 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Player moved: dx=0, dy=-1
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,308 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Player moved: dx=0, dy=-1
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,325 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Key pressed: left
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Moving player: dx=-1, dy=0
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,341 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,358 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,374 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Key pressed: right
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Moving player: dx=1, dy=0
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 295)
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=-1
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,391 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 295)
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=-1
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,407 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 295)
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=-1
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,423 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Key released: up
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,439 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,456 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,473 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,489 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,505 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,521 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Key released: left
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Key pressed: down
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Moving player: dx=0, dy=1
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 305)
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 305)
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=1
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,538 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Key pressed: left
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Moving player: dx=-1, dy=0
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 305)
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=1
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,555 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 305)
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=1
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,571 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Key released: down
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=0
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,587 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Key released: right
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,604 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,621 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,638 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Key pressed: down
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Moving player: dx=0, dy=1
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 305)
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 305)
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=1
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,655 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 305)
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=1
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,671 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 305)
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=1
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,688 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 305)
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=1
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,705 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Down key pressed
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 305)
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=1
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,723 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Key released: down
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,739 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,755 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,772 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,788 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,806 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 300)
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=0
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,822 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Key pressed: right
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Moving player: dx=1, dy=0
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 300)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Key pressed: up
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Moving player: dx=0, dy=-1
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Attempting to move player to: (400, 295)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 295)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=-1
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,839 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 295)
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=-1
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,855 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Right key pressed
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Attempting to move player to: (405, 295)
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Player moved: dx=1, dy=-1
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,871 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Key released: right
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,888 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,904 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,921 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Left key pressed
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Up key pressed
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Attempting to move player to: (395, 295)
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Collision detected with obstacle: <rect(400, 300, 150, 30)>
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Movement blocked by collision
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Player moved: dx=-1, dy=-1
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Camera updated: (0, 0)
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Player position: (400, 300)
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Camera position: (0, 0)
+2024-09-01 05:32:40,938 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,954 - InteractiveLearningGame - DEBUG - Game paused: True
+2024-09-01 05:32:40,954 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,971 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:40,988 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,005 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,022 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,040 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,056 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,073 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,088 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,105 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,121 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,136 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,154 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,170 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,188 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,203 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,220 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,236 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,252 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,268 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,285 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,303 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,319 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,336 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,352 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,369 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,386 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,403 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,419 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,436 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,453 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,470 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,486 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,502 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,518 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,535 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,551 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,568 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,585 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,602 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,619 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,636 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,651 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,668 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,685 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,702 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,719 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,736 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,753 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,770 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,786 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,804 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,820 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,837 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,854 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,871 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,888 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,905 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,920 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,937 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,955 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,971 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:41,988 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,005 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,021 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,038 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,055 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,070 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,087 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,103 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,200 - InteractiveLearningGame - DEBUG - Player rendered at: <rect(400, 300, 50, 50)>, actual position: (400, 300)
+2024-09-01 05:32:42,202 - InteractiveLearningGame - INFO - Exiting game loop
+2024-09-01 05:32:42,258 - InteractiveLearningGame - INFO - Game closing

@@ -2,10 +2,12 @@ import pygame
 from scenes.base_scene import BaseScene
 from scenes.character_creation import CharacterCreationScene
 from config import config
+from logger import logger
 
 class MainMenuScene(BaseScene):
     def __init__(self, game_engine):
         super().__init__(game_engine)
+        logger.info("Initializing MainMenuScene")
         self.font_large = self.game_engine.asset_manager.get_font('raleway', 48, 'bold')
         self.font_medium = self.game_engine.asset_manager.get_font('raleway', 32, 'regular')
         self.title = self.font_large.render(config.get('window_title'), True, (255, 255, 255))
@@ -16,8 +18,10 @@ class MainMenuScene(BaseScene):
     def handle_event(self, event):
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
+                logger.info("Space key pressed, changing to CharacterCreationScene")
                 self.game_engine.change_scene(CharacterCreationScene(self.game_engine))
             elif event.key == pygame.K_q:
+                logger.info("Q key pressed, quitting game")
                 self.game_engine.running = False
 
     def update(self, dt):

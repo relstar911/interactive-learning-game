@@ -4,6 +4,7 @@ from config import config
 import traceback
 from asset_manager import AssetManager
 from sound_manager import SoundManager  # Importieren Sie den SoundManager
+from logger import logger
 
 class GameState(Enum):
     MAIN_MENU = 0
@@ -16,6 +17,7 @@ class GameState(Enum):
 
 class GameEngine:
     def __init__(self):
+        logger.info("Initializing GameEngine")
         pygame.init()
         self.width = config.get('window_width')
         self.height = config.get('window_height')
@@ -31,17 +33,18 @@ class GameEngine:
         self.asset_manager = AssetManager()
         self.sound_manager = SoundManager(self.asset_manager)  # Initialisieren Sie den SoundManager
         
-        print(f"GameEngine initialized. Screen size: {self.width}x{self.height}")
+        logger.info(f"GameEngine initialized. Screen size: {self.width}x{self.height}")
 
     def change_scene(self, scene):
-        print(f"Changing scene to {scene.__class__.__name__}")
+        logger.info(f"Changing scene to {scene.__class__.__name__}")
         self.current_scene = scene
 
     def change_state(self, new_state):
         self.state = new_state
-        # Hier könnten Sie zusätzliche Logik für Zustandsänderungen hinzufügen
+        logger.info(f"Game state changed to {new_state}")
 
     def run(self):
+        logger.info("Starting game loop")
         try:
             self.running = True
             while self.running:
@@ -50,18 +53,21 @@ class GameEngine:
                 self.update(dt)
                 self.render()
         except Exception as e:
-            print(f"Ein Fehler ist aufgetreten: {str(e)}")
-            print("Stacktrace:")
-            traceback.print_exc()
+            logger.error(f"An error occurred in the game loop: {str(e)}", exc_info=True)
         finally:
+            logger.info("Exiting game loop")
             pygame.quit()
 
     def handle_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running = False
-            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                self.paused = not self.paused
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    self.paused = not self.paused
+                    logger.debug(f"Game paused: {self.paused}")
+                elif not self.paused and self.current_scene:
+                    self.current_scene.handle_event(event)
             elif not self.paused and self.current_scene:
                 self.current_scene.handle_event(event)
 
@@ -76,20 +82,18 @@ class GameEngine:
                 self.render_pause_screen()
             pygame.display.flip()
         else:
-            print("No current scene to render")
+            logger.warning("No current scene to render")
 
     def render_pause_screen(self):
         overlay = pygame.Surface((self.width, self.height), pygame.SRCALPHA)
         overlay.fill((0, 0, 0, 128))
         self.screen.blit(overlay, (0, 0))
         font = self.asset_manager.get_font('raleway', 48, 'bold')
-        text = font.render("PAUSE", True, (255, 255, 255))
+        text = font.render("PAUSED", True, (255, 255, 255))
         text_rect = text.get_rect(center=(self.width // 2, self.height // 2))
         self.screen.blit(text, text_rect)
 
     def play_sound(self, sound_name):
-        sound = self.asset_manager.get_sound(sound_name)
-        if sound:
-            sound.play()
+        self.sound_manager.play_effect(sound_name)
 
 game_engine = GameEngine()

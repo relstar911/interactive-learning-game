@@ -67,4 +67,5 @@ class MemoryGame:
 
     def update(self, dt):
         # Hier können Sie Aktualisierungslogik hinzufügen, z.B. für Animationen
-        pass
+        passpython
+        
