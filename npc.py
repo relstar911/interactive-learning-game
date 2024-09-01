@@ -1,41 +1,35 @@
 import pygame
-from config import config
+from logger import logger
+from content.asset_config import SPRITE_MAPPINGS
 
-class NPC:
-    def __init__(self, name, position, dialogue, sprite_name="default_npc"):
-        self.name = name
-        self.position = position
-        self.dialogue = dialogue
-        self.sprite_name = sprite_name
-        self.sprite = None
-        self.rect = pygame.Rect(position[0], position[1], 50, 50)  # Platzhalter-Größe
+class NPC(pygame.sprite.Sprite):
+    def __init__(self, npc_data, asset_manager):
+        super().__init__()
+        self.name = npc_data["name"]
+        self.role = npc_data["role"]
+        self.position = npc_data["position"]
+        self.dialogue = npc_data["dialogue"]
+        self.sprite_sheet = asset_manager.get_sprite('npc')
+        self.image = self.get_image(0, 0, 32, 32)  # Assuming 32x32 grid for slime
+        self.rect = self.image.get_rect(topleft=self.position)
+        self.animation_index = 0
 
-    def load_sprite(self, asset_manager):
-        self.sprite = asset_manager.get_sprite(self.sprite_name)
-        if self.sprite is None:
-            print(f"Warnung: Sprite '{self.sprite_name}' für NPC '{self.name}' nicht gefunden.")
-        else:
-            self.rect = self.sprite.get_rect(topleft=self.position)
+    def get_image(self, x, y, width, height):
+        image = pygame.Surface([width, height])
+        image.blit(self.sprite_sheet, (0, 0), (x, y, width, height))
+        image.set_colorkey((0, 0, 0))
+        return image
 
-    def draw(self, surface):
-        if self.sprite:
-            surface.blit(self.sprite, self.rect)
-        else:
-            pygame.draw.rect(surface, (0, 255, 0), self.rect)  # Grünes Rechteck als Platzhalter
+    def update(self, dt):
+        self.animation_index = (self.animation_index + 1) % 3
+        self.image = self.get_image(self.animation_index * 32, 0, 32, 32)
 
-    def get_questions(self):
-        # Hier würden Sie Fragen basierend auf dem NPC-Typ zurückgeben
-        return [
-            {
-                "question": f"What is the role of {self.name}?",
-                "options": ["Manager", "Developer", "Designer", "HR Specialist"],
-                "correct": 0
-            },
-            {
-                "question": "What's our company's main value?",
-                "options": ["Money", "Innovation", "People", "Technology"],
-                "correct": 2
-            },
-        ]
+    def draw(self, surface, camera):
+        surface.blit(self.image, camera.apply(self))
 
-# Die DialogueTree und DialogueNode Klassen können Sie später implementieren, wenn Sie das Dialogsystem erweitern.
+    def interact(self, game_tasks):
+        logger.info(f"{self.name} is interacting.")
+        return self.dialogue.get("greeting", f"Hello, I'm {self.name}!")
+
+    def get_dialogue_options(self):
+        return self.dialogue.get("options", [])

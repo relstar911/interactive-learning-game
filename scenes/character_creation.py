@@ -3,6 +3,8 @@ from scenes.base_scene import BaseScene
 from player import Player
 from scenes.tutorial import TutorialScene
 from config import config
+from scenes.game_world_scene import GameWorldScene
+from logger import logger
 
 class CharacterCreationScene(BaseScene):
     def __init__(self, game_engine):
@@ -10,16 +12,20 @@ class CharacterCreationScene(BaseScene):
         self.name_input = ""
         self.font_large = self.game_engine.asset_manager.get_font('raleway', 32, 'bold')
         self.font_medium = self.game_engine.asset_manager.get_font('raleway', 24, 'regular')
+        if self.font_large is None or self.font_medium is None:
+            logger.warning("Failed to load custom fonts in CharacterCreationScene. Using system default.")
+            self.font_large = pygame.font.Font(None, 32)
+            self.font_medium = pygame.font.Font(None, 24)
         self.error_message = ""
         self.max_name_length = config.get('max_player_name_length')
-        print("CharacterCreationScene initialized")
+        logger.info("CharacterCreationScene initialized")
 
     def handle_event(self, event):
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RETURN:
                 if self.name_input:
                     print(f"Creating player with name: {self.name_input}")
-                    player = Player(self.name_input, self.game_engine.width // 2, self.game_engine.height // 2, self.game_engine.asset_manager)
+                    player = Player(self.name_input, self.game_engine.asset_manager)
                     self.game_engine.player = player
                     self.game_engine.change_scene(TutorialScene(self.game_engine))
                 else:
@@ -57,3 +63,8 @@ class CharacterCreationScene(BaseScene):
 
         name_length = self.font_medium.render(f"Namenslänge: {len(self.name_input)}/{self.max_name_length}", True, (100, 100, 100))
         screen.blit(name_length, (screen_width // 2 - name_length.get_width() // 2, 300))
+
+    def create_character(self, name):
+        player = Player(name, 400, 300, self.game_engine.asset_manager)
+        self.game_engine.player = player
+        self.game_engine.change_scene(GameWorldScene(self.game_engine))

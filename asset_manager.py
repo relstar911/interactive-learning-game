@@ -1,64 +1,86 @@
-import os
 import pygame
-from config import config
+from content.asset_config import get_sprite_path, get_sound_path, SPRITE_MAPPINGS, SOUND_MAPPINGS, FONTS_DIR, get_font_path
+from logger import logger
+import os
 
 class AssetManager:
     def __init__(self):
-        self.assets = {
-            'fonts': {},
-            'sounds': {},
-            'sprites': {},
-            'models': {}
-        }
+        self.sprites = {}
+        self.sounds = {}
+        self.fonts = {}
         self.load_assets()
 
     def load_assets(self):
-        self.load_fonts()
-        self.load_sounds()
         self.load_sprites()
-
-    def load_fonts(self):
-        font_path = os.path.join(config.font_dir, 'Raleway', 'Raleway-4.101', 'static', 'TTF')
-        font_sizes = [24, 32, 48]  # Verschiedene Größen für unterschiedliche Zwecke
-        for size in font_sizes:
-            self.assets['fonts'][f'raleway_{size}'] = {
-                'regular': pygame.font.Font(os.path.join(font_path, 'Raleway-Regular.ttf'), size),
-                'bold': pygame.font.Font(os.path.join(font_path, 'Raleway-Bold.ttf'), size)
-            }
-
-    def load_sounds(self):
-        sound_files = {
-            'telecom': '1350180_TeleCom-INC.mp3',
-            'backshots': '1352396_I-Gave-Them-Backshots.mp3',
-            'piano': '1354018_288-Autograph-Piano-2023.mp3',
-            'island': '1354837_Timeless-Island-Surreal-x-.mp3'
-        }
-        for name, file in sound_files.items():
-            sound_path = os.path.join(config.sound_dir, file)
-            if os.path.exists(sound_path):
-                self.assets['sounds'][name] = sound_path  # Speichern Sie den Pfad anstelle des Sound-Objekts
-            else:
-                print(f"Warnung: Sounddatei '{file}' nicht gefunden.")
+        self.load_sounds()
+        self.load_fonts()
 
     def load_sprites(self):
-        sprite_files = [
-            'character.png', 'npc1.png', 'npc2.png', 'npc3.png',
-            'book.png', 'potion.png', 'tilemap.png'
-        ]
-        for file in sprite_files:
-            name = os.path.splitext(file)[0]
-            self.assets['sprites'][name] = pygame.image.load(os.path.join(config.sprite_dir, file)).convert_alpha()
+        for sprite_name in SPRITE_MAPPINGS:
+            sprite_path = get_sprite_path(sprite_name)
+            if sprite_path:
+                try:
+                    self.sprites[sprite_name] = pygame.image.load(sprite_path).convert_alpha()
+                    logger.info(f"Loaded sprite: {sprite_name}")
+                except pygame.error as e:
+                    logger.error(f"Failed to load sprite {sprite_name}: {e}")
+                    self.sprites[sprite_name] = self.create_placeholder_sprite()
+            else:
+                logger.warning(f"Sprite path not found for: {sprite_name}")
+                self.sprites[sprite_name] = self.create_placeholder_sprite()
 
-    def get_font(self, name, size=24, style='regular'):
-        return self.assets['fonts'].get(f'{name}_{size}', {}).get(style)
+    def create_placeholder_sprite(self):
+        surface = pygame.Surface((50, 50))
+        surface.fill((255, 0, 255))  # Magenta color for missing sprites
+        return surface
 
-    def get_sound(self, name):
-        return self.assets['sounds'].get(name)
+    def load_sounds(self):
+        for sound_name in SOUND_MAPPINGS:
+            sound_path = get_sound_path(sound_name)
+            if sound_path:
+                try:
+                    self.sounds[sound_name] = pygame.mixer.Sound(sound_path)
+                    logger.info(f"Loaded sound: {sound_name}")
+                except pygame.error as e:
+                    logger.error(f"Failed to load sound {sound_name}: {e}")
+            else:
+                logger.warning(f"Sound path not found for: {sound_name}")
+
+    def load_fonts(self):
+        font_sizes = [16, 24, 32, 48]
+        styles = ['regular', 'bold']
+        for size in font_sizes:
+            for style in styles:
+                font_name = f'raleway_{size}'
+                if style == 'bold':
+                    font_name += '_bold'
+                font_path = get_font_path(f'raleway_{style}')
+                if font_path and os.path.exists(font_path):
+                    try:
+                        self.fonts[font_name] = pygame.font.Font(font_path, size)
+                        logger.info(f"Loaded font: {font_name}")
+                    except pygame.error:
+                        logger.error(f"Failed to load font: {font_name}")
+                        self.fonts[font_name] = pygame.font.Font(None, size)
+                else:
+                    logger.warning(f"Font file not found: {font_path}. Using system default.")
+                    self.fonts[font_name] = pygame.font.Font(None, size)
 
     def get_sprite(self, name):
-        return self.assets['sprites'].get(name)
+        sprite = self.sprites.get(name)
+        if sprite is None:
+            logger.warning(f"Sprite '{name}' not found in asset manager.")
+        return sprite
 
-    def get_model(self, name):
-        return self.assets['models'].get(name)
+    def get_sound(self, name):
+        return self.sounds.get(name)
 
-# Wir erstellen die Instanz nicht hier, sondern in der game_engine.py
+    def get_font(self, name, size=24, style='regular'):
+        font_name = f'{name}_{size}'
+        if style == 'bold':
+            font_name += '_bold'
+        font = self.fonts.get(font_name)
+        if font is None:
+            logger.warning(f"Font '{font_name}' not found. Using system default.")
+            font = pygame.font.Font(None, size)
+        return font

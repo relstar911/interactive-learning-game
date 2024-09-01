@@ -14,3 +14,16 @@ class NPC(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
 # ... andere Sprite-Klassen ...
+
+# Beispielinhalt für sprites.py
+import pygame
+
+class SpriteManager:
+    def __init__(self):
+        self.sprites = {}
+
+    def load_sprite(self, name, path):
+        self.sprites[name] = pygame.image.load(path).convert_alpha()
+
+    def get_sprite(self, name):
+        return self.sprites.get(name)

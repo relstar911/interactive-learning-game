@@ -10,6 +10,12 @@ class MainMenuScene(BaseScene):
         logger.info("Initializing MainMenuScene")
         self.font_large = self.game_engine.asset_manager.get_font('raleway', 48, 'bold')
         self.font_medium = self.game_engine.asset_manager.get_font('raleway', 32, 'regular')
+        
+        if self.font_large is None or self.font_medium is None:
+            logger.warning("Failed to load fonts in MainMenuScene. Using system default font.")
+            self.font_large = pygame.font.Font(None, 48)
+            self.font_medium = pygame.font.Font(None, 32)
+        
         self.title = self.font_large.render(config.get('window_title'), True, (255, 255, 255))
         self.start_text = self.font_medium.render("Press SPACE to start", True, (255, 255, 255))
         self.quit_text = self.font_medium.render("Press Q to quit", True, (255, 255, 255))
