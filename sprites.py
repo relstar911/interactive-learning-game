@@ -1,22 +1,16 @@
 import pygame
-from asset_manager import asset_manager
+from asset_manager import AssetManager
 
-class PlayerSprite(pygame.sprite.Sprite):
-    def __init__(self, x, y):
+class Character(pygame.sprite.Sprite):
+    def __init__(self, asset_manager):
         super().__init__()
-        self.image = asset_manager.get_sprite('player')
+        self.image = asset_manager.get_sprite('character')
         self.rect = self.image.get_rect()
-        self.rect.x = x
-        self.rect.y = y
 
-    def move(self, dx, dy):
-        self.rect.x += dx
-        self.rect.y += dy
-
-class NPCSprite(pygame.sprite.Sprite):
-    def __init__(self, x, y, sprite_name):
+class NPC(pygame.sprite.Sprite):
+    def __init__(self, asset_manager, npc_type):
         super().__init__()
-        self.image = asset_manager.get_sprite(sprite_name)
+        self.image = asset_manager.get_sprite(f'npc{npc_type}')
         self.rect = self.image.get_rect()
-        self.rect.x = x
-        self.rect.y = y
+
+# ... andere Sprite-Klassen ...

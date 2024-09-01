@@ -1,39 +1,47 @@
 import pygame
 from scenes.base_scene import BaseScene
 from scenes.character_creation import CharacterCreationScene
-from asset_manager import asset_manager
+from config import config
 
 class MainMenuScene(BaseScene):
     def __init__(self, game_engine):
         super().__init__(game_engine)
-        self.font = asset_manager.fonts.get('main', pygame.font.Font(None, 36))
-        self.background = asset_manager.sprites.get('background')
-        self.prototype_tiles = asset_manager.sprites.get('prototype_tiles')
-        print(f"MainMenuScene initialized. Font: {self.font}, Background: {self.background}")
+        self.font_large = self.game_engine.asset_manager.get_font('raleway', 48, 'bold')
+        self.font_medium = self.game_engine.asset_manager.get_font('raleway', 32, 'regular')
+        self.title = self.font_large.render(config.get('window_title'), True, (255, 255, 255))
+        self.start_text = self.font_medium.render("Press SPACE to start", True, (255, 255, 255))
+        self.quit_text = self.font_medium.render("Press Q to quit", True, (255, 255, 255))
+        self.background = self.game_engine.asset_manager.get_sprite('tilemap')  # Annahme: Es gibt ein 'tilemap' Sprite
 
     def handle_event(self, event):
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
-            print("ENTER key pressed, changing to CharacterCreationScene")
-            self.game_engine.change_scene(CharacterCreationScene(self.game_engine))
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:
+                self.game_engine.change_scene(CharacterCreationScene(self.game_engine))
+            elif event.key == pygame.K_q:
+                self.game_engine.running = False
 
     def update(self, dt):
-        pass  # Hier können Sie bei Bedarf Update-Logik hinzufügen
+        pass  # Hier könnten wir Animationen oder andere Updates hinzufügen
 
     def render(self, screen):
-        print("Rendering MainMenuScene")
+        # Hintergrund zeichnen
         if self.background:
             screen.blit(self.background, (0, 0))
         else:
-            screen.fill((255, 255, 255))  # Weißer Hintergrund als Fallback
+            screen.fill((0, 0, 0))  # Schwarzer Hintergrund als Fallback
         
-        # Verwenden Sie die neuen Prototype-Tiles als dekorative Elemente
-        if self.prototype_tiles:
-            for i in range(0, screen.get_width(), 64):
-                screen.blit(self.prototype_tiles, (i, 0), (0, 0, 64, 64))  # Obere Kante
-                screen.blit(self.prototype_tiles, (i, screen.get_height() - 64), (0, 0, 64, 64))  # Untere Kante
+        screen_width, screen_height = screen.get_size()
+        
+        # Titel rendern
+        title_rect = self.title.get_rect(center=(screen_width // 2, screen_height // 4))
+        screen.blit(self.title, title_rect)
+        
+        # Start-Text rendern
+        start_rect = self.start_text.get_rect(center=(screen_width // 2, screen_height // 2))
+        screen.blit(self.start_text, start_rect)
+        
+        # Quit-Text rendern
+        quit_rect = self.quit_text.get_rect(center=(screen_width // 2, 3 * screen_height // 4))
+        screen.blit(self.quit_text, quit_rect)
 
-        title = self.font.render("Interactive Learning Game", True, (0, 0, 0))
-        start = self.font.render("Press ENTER to start", True, (0, 0, 0))
-        screen.blit(title, (screen.get_width() // 2 - title.get_width() // 2, 200))
-        screen.blit(start, (screen.get_width() // 2 - start.get_width() // 2, 300))
-        print("MainMenuScene rendered")
+        # Kein pygame.display.flip() hier, da das in der GameEngine-Klasse gemacht wird

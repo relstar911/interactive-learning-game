@@ -1,85 +1,50 @@
 import pygame
 from inventory import Inventory
-from asset_manager import asset_manager
+from config import config
 
-class Player:
-    def __init__(self, name, x, y):
+class Player(pygame.sprite.Sprite):
+    def __init__(self, name, x, y, asset_manager):
+        super().__init__()
         self.name = name
         self.xp = 0
-        self.level = 1
-        self.sprites = asset_manager.get_sprite('player')
-        if isinstance(self.sprites, list):
-            self.current_frame = 0
-            self.image = self.sprites[self.current_frame]
-        else:
-            self.image = self.sprites  # Wenn es nur ein einzelnes Surface ist
-        self.rect = self.image.get_rect()
+        self.level = config.get('initial_player_level')
+        self.sprite = asset_manager.get_sprite('character')
+        self.rect = self.sprite.get_rect()
         self.rect.x = x
         self.rect.y = y
         self.inventory = Inventory()
-        self.tutorial_completed = False
-        self.quiz_correct_answers = 0
-        self.memory_game_won = False
-        self.speed = 3
-        self.animation_timer = 0
-        self.animation_speed = 200  # Milliseconds per frame
+        self.speed = config.get('player_speed')
+        self.score = 0
 
     def move(self, dx, dy):
-        new_x = self.rect.x + dx * self.speed
-        new_y = self.rect.y + dy * self.speed
-        
-        # Simple collision detection with screen edges
-        if 0 <= new_x <= 800 - self.rect.width:
-            self.rect.x = new_x
-        if 0 <= new_y <= 600 - self.rect.height:
-            self.rect.y = new_y
+        self.rect.x += dx * self.speed
+        self.rect.y += dy * self.speed
+        print(f"Player position updated: ({self.rect.x}, {self.rect.y})")  # Debugging-Ausgabe
 
-        # Update animation when player moves
-        if dx != 0 or dy != 0:
-            self.update_animation()
-
-    def update_animation(self):
-        if isinstance(self.sprites, list):
-            self.animation_timer += 16  # Assuming 60 FPS, so about 16ms per frame
-            if self.animation_timer >= self.animation_speed:
-                self.animation_timer = 0
-                self.current_frame = (self.current_frame + 1) % len(self.sprites)
-                self.image = self.sprites[self.current_frame]
-
-    def draw(self, screen):
-        screen.blit(self.image, self.rect)
+    def update_score(self, correct):
+        if correct:
+            self.score += 10
+            self.gain_xp(20)
+        else:
+            self.score -= 5
 
     def gain_xp(self, amount):
         self.xp += amount
-        while self.xp >= self.level * 100:
-            self.level_up()
-
-    def check_level_up(self):
-        if self.xp >= self.level * 100:
+        while self.xp >= self.level * config.get('xp_per_level'):
             self.level_up()
 
     def level_up(self):
         self.level += 1
-        self.xp -= (self.level - 1) * 100
+        self.xp -= (self.level - 1) * config.get('xp_per_level')
         print(f"{self.name} has leveled up to level {self.level}!")
-        # Hier könnten Sie Belohnungen für das Leveln hinzufügen, z.B.:
-        # self.max_health += 10
-        # self.attack_power += 2
 
     def add_to_inventory(self, item):
         self.inventory.add_item(item)
 
-    def remove_from_inventory(self, item):
-        self.inventory.remove_item(item)
-
     def get_inventory(self):
         return self.inventory.get_items()
 
-    def complete_tutorial(self):
-        self.tutorial_completed = True
-
-    def answer_quiz_correctly(self):
-        self.quiz_correct_answers += 1
-
-    def win_memory_game(self):
-        self.memory_game_won = True
+    def set_position(self, x, y):
+        self.rect.x = x
+        self.rect.y = y
+        print(f"Player position set to: ({self.rect.x}, {self.rect.y})")

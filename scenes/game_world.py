@@ -10,9 +10,7 @@ class GameWorldScene(BaseScene):
         self.player = self.game_engine.player
         self.background = asset_manager.get_sprite('background')
         self.npcs = [
-            NPC("Tutor", 100, 100, "Tutor", "npc1"),
-            NPC("Quizmaster", 300, 300, "Quizmaster", "npc2"),
-            NPC("Gamemaster", 500, 500, "Gamemaster", "npc3")
+            NPC("Tutor", (100, 100), "Willkommen im Spiel!", "tutor_sprite")
         ]
         self.game_objects = [
             GameObject(200, 200, "book", "Lehrbuch", "Ein Buch über Pygame-Programmierung."),
@@ -46,6 +44,10 @@ class GameWorldScene(BaseScene):
         for pos in tree_positions:
             trees.append(GameObject(pos[0], pos[1], "tree", "Baum", "Ein schöner Baum"))
         return trees
+
+    def load_npc_sprites(self):
+        for npc in self.npcs:
+            npc.load_sprite(self.game_engine.asset_manager)
 
     def handle_event(self, event):
         current_time = pygame.time.get_ticks()

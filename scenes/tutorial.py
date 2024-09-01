@@ -1,31 +1,28 @@
-import pygame
 from scenes.base_scene import BaseScene
+import pygame
+from config import config
+from scenes.game_world_scene import GameWorldScene
 
 class TutorialScene(BaseScene):
     def __init__(self, game_engine):
         super().__init__(game_engine)
-        self.font = pygame.font.Font(None, 36)
-        self.tutorial_steps = [
-            "Willkommen im Tutorial!",
-            "Benutze die Pfeiltasten, um dich zu bewegen.",
-            "Drücke SPACE, um mit Objekten zu interagieren.",
-            "Drücke Q, um ein Quiz zu starten.",
-            "Drücke M, um ein Mini-Spiel zu spielen.",
-            "Drücke ENTER, um fortzufahren."
-        ]
-        self.current_step = 0
+        self.font_large = self.game_engine.asset_manager.get_font('raleway', 32, 'bold')
+        self.font_medium = self.game_engine.asset_manager.get_font('raleway', 24, 'regular')
 
     def handle_event(self, event):
         if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
-            self.current_step += 1
-            if self.current_step >= len(self.tutorial_steps):
-                from scenes.game_world import GameWorldScene
-                self.game_engine.change_scene(GameWorldScene(self.game_engine))
+            self.game_engine.change_scene(GameWorldScene(self.game_engine))
 
     def update(self, dt):
-        pass  # Hier können Sie bei Bedarf Update-Logik hinzufügen
+        pass
 
     def render(self, screen):
-        screen.fill((255, 255, 255))
-        text = self.font.render(self.tutorial_steps[self.current_step], True, (0, 0, 0))
-        screen.blit(text, (100, 300))
+        screen.fill((200, 230, 250))  # Hellblauer Hintergrund
+        
+        title = self.font_large.render("Tutorial", True, (0, 0, 0))
+        instruction = self.font_medium.render("Press ENTER to start the game", True, (0, 0, 0))
+        
+        screen_width, screen_height = screen.get_size()
+        
+        screen.blit(title, (screen_width // 2 - title.get_width() // 2, 100))
+        screen.blit(instruction, (screen_width // 2 - instruction.get_width() // 2, 300))

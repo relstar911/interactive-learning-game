@@ -1,56 +1,40 @@
 # Beitragen zum Interactive Learning Game
 
-Wir freuen uns über Beiträge zur Verbesserung dieses Projekts! Hier sind einige Richtlinien, die Sie beachten sollten:
+Wir freuen uns über Beiträge zur Verbesserung und Erweiterung dieses Projekts! Hier sind einige Richtlinien, die Ihnen helfen, effektiv zum Projekt beizutragen.
 
 ## Wie Sie beitragen können
 
-1. Forken Sie das Repository und erstellen Sie einen neuen Branch für Ihre Funktion oder Fehlerbehebung.
-2. Implementieren Sie Ihre Änderungen und stellen Sie sicher, dass sie gut dokumentiert sind.
-3. Schreiben Sie Tests für neue Funktionen oder Fehlerbehebungen.
-4. Stellen Sie sicher, dass alle Tests erfolgreich durchlaufen.
-5. Erstellen Sie einen Pull Request mit einer klaren Beschreibung Ihrer Änderungen.
+1. **Fehler melden**: Wenn Sie einen Fehler finden, erstellen Sie bitte ein Issue mit einer klaren Beschreibung des Problems und Schritten zur Reproduktion.
+2. **Neue Funktionen vorschlagen**: Haben Sie eine Idee für eine neue Funktion? Erstellen Sie ein Issue und beschreiben Sie Ihre Idee im Detail.
+3. **Code beitragen**: Möchten Sie selbst Code beitragen? Großartig! Folgen Sie bitte diesen Schritten:
+	- Forken Sie das Repository
+	- Erstellen Sie einen neuen Branch für Ihre Änderungen
+	- Committen Sie Ihre Änderungen mit klaren, beschreibenden Commit-Nachrichten
+	- Pushen Sie Ihre Änderungen zu Ihrem Fork
+	- Erstellen Sie einen Pull Request mit einer klaren Beschreibung Ihrer Änderungen
 
 ## Coding Standards
 
-- Befolgen Sie die PEP 8 Richtlinien für Python-Code.
-- Verwenden Sie aussagekräftige Variablen- und Funktionsnamen.
-- Kommentieren Sie komplexen Code ausreichend.
-- Halten Sie Funktionen klein und fokussiert.
+- Folgen Sie den PEP 8 Richtlinien für Python-Code
+- Kommentieren Sie Ihren Code, wo es angemessen ist
+- Schreiben Sie klare, beschreibende Commit-Nachrichten
 
-## Hinzufügen neuer Funktionen
+## Aktuelle Prioritäten
 
-- Wenn Sie eine neue Funktion hinzufügen, aktualisieren Sie bitte auch die entsprechende Dokumentation.
-- Neue Funktionen sollten modular und wiederverwendbar sein.
-- Berücksichtigen Sie die Auswirkungen auf die Leistung und Skalierbarkeit des Spiels.
-
-## Fehlerbehebung
-
-- Beschreiben Sie den Fehler klar und präzise in Ihrem Pull Request.
-- Fügen Sie Schritte zur Reproduktion des Fehlers hinzu.
-- Erklären Sie Ihre Lösung und warum Sie glauben, dass sie effektiv ist.
+Wir konzentrieren uns derzeit auf folgende Bereiche:
+1. Verbesserung der Spielerinteraktionen und Bewegung
+2. Erweiterung des Quizsystems
+3. Hinzufügen von mehr Inhalten (NPCs, Objekte, Fragen)
+4. Verbesserung der visuellen Darstellung
+5. Implementierung von Soundeffekten und Musik
 
 ## Testen
 
-- Schreiben Sie Unit-Tests für neue Funktionen oder Fehlerbehebungen.
-- Stellen Sie sicher, dass alle bestehenden Tests nach Ihren Änderungen noch erfolgreich durchlaufen.
-
-## Dokumentation
-
-- Aktualisieren Sie die README.md, wenn Sie signifikante Änderungen oder neue Funktionen hinzufügen.
-- Dokumentieren Sie neue Funktionen oder Änderungen in den entsprechenden Codedateien.
-
-## Aktualisieren von Assets
-
-- Wenn Sie neue Grafiken oder Sounds hinzufügen, stellen Sie sicher, dass sie in den entsprechenden Verzeichnissen unter `assets/` platziert werden.
-- Aktualisieren Sie die `config.json` Datei, wenn Sie neue Assets hinzufügen.
-
-## Umgang mit der OpenAI-Integration
-
-- Seien Sie vorsichtig beim Ändern der LLM-Integrationslogik.
-- Stellen Sie sicher, dass der API-Schlüssel sicher gehandhabt wird und nicht versehentlich in das Repository hochgeladen wird.
+- Fügen Sie Tests für neue Funktionen hinzu, wenn möglich
+- Stellen Sie sicher, dass alle bestehenden Tests nach Ihren Änderungen noch bestehen
 
 ## Fragen?
 
-Wenn Sie Fragen haben oder Hilfe benötigen, zögern Sie nicht, ein Issue zu eröffnen oder uns direkt zu kontaktieren.
+Wenn Sie Fragen haben oder Hilfe benötigen, zögern Sie nicht, ein Issue zu erstellen oder sich an die Projektbetreuer zu wenden.
 
-Vielen Dank für Ihre Beiträge!
+Vielen Dank für Ihr Interesse an unserem Projekt!
