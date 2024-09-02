@@ -1,14 +1,14 @@
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SPRITES_DIR = os.path.join(BASE_DIR, 'sprites')
-ASSETS_DIR = os.path.join(SPRITES_DIR, 'assets')
+ASSETS_DIR = os.path.join(BASE_DIR, 'assets')
+IMAGES_DIR = os.path.join(ASSETS_DIR, 'images')
 
 SPRITE_DIRS = {
-    'characters': os.path.join(SPRITES_DIR, 'characters'),
-    'objects': os.path.join(SPRITES_DIR, 'objects'),
-    'particles': os.path.join(SPRITES_DIR, 'particles'),
-    'textures': os.path.join(ASSETS_DIR, 'Texture')
+    'characters': os.path.join(IMAGES_DIR, 'characters'),
+    'items': os.path.join(IMAGES_DIR, 'items'),
+    'tiles': os.path.join(IMAGES_DIR, 'tiles'),
+    'ui': os.path.join(IMAGES_DIR, 'ui')
 }
 
 SPRITE_MAPPINGS = {
@@ -31,7 +31,9 @@ SOUND_MAPPINGS = {
     'pickup': 'item-equip-6904.mp3',
 }
 
-FONTS_DIR = os.path.join(ASSETS_DIR, 'fonts', 'Raleway', 'static')
+MUSIC_DIR = os.path.join(ASSETS_DIR, 'music')
+
+FONTS_DIR = os.path.join(ASSETS_DIR, 'fonts')
 
 FONT_MAPPINGS = {
     'raleway_regular': 'Raleway-Regular.ttf',
@@ -51,7 +53,26 @@ def get_sound_path(sound_name):
         return os.path.join(SOUND_DIR, SOUND_MAPPINGS[sound_name])
     return None
 
+def get_music_path(music_name):
+    if music_name in SOUND_MAPPINGS:  # Assuming music files are also in SOUND_MAPPINGS
+        return os.path.join(MUSIC_DIR, SOUND_MAPPINGS[music_name])
+    return None
+
 def get_font_path(font_name):
     if font_name in FONT_MAPPINGS:
         return os.path.join(FONTS_DIR, FONT_MAPPINGS[font_name])
     return None
+
+def debug_sound_paths():
+    print(f"SOUND_DIR: {SOUND_DIR}")
+    print(f"Files in SOUND_DIR: {os.listdir(SOUND_DIR)}")
+    for sound_name, file_name in SOUND_MAPPINGS.items():
+        full_path = os.path.join(SOUND_DIR, file_name)
+        print(f"{sound_name}: {'Exists' if os.path.exists(full_path) else 'Not Found'} - {full_path}")
+
+def debug_music_paths():
+    print(f"MUSIC_DIR: {MUSIC_DIR}")
+    print(f"Files in MUSIC_DIR: {os.listdir(MUSIC_DIR)}")
+    for music_name, file_name in SOUND_MAPPINGS.items():  # Assuming music files are also in SOUND_MAPPINGS
+        full_path = os.path.join(MUSIC_DIR, file_name)
+        print(f"{music_name}: {'Exists' if os.path.exists(full_path) else 'Not Found'} - {full_path}")

@@ -1,0 +1,39 @@
+2024-09-01 23:16:47,371 - InteractiveLearningGame - INFO - Initializing GameEngine
+2024-09-01 23:16:47,993 - InteractiveLearningGame - INFO - Loaded sprite: player from C:\Users\ardah\Gehirnbank\sprites\characters\player.png
+2024-09-01 23:16:47,994 - InteractiveLearningGame - INFO - Loaded sprite: npc from C:\Users\ardah\Gehirnbank\sprites\characters\slime.png
+2024-09-01 23:16:47,995 - InteractiveLearningGame - INFO - Loaded sprite: tilemap from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Tileset Grass.png
+2024-09-01 23:16:48,000 - InteractiveLearningGame - INFO - Loaded sprite: tutor from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,004 - InteractiveLearningGame - INFO - Loaded sprite: quizmaster from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,008 - InteractiveLearningGame - INFO - Loaded sprite: gamemaster from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,012 - InteractiveLearningGame - INFO - Loaded sprite: book from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,015 - InteractiveLearningGame - INFO - Loaded sprite: potion from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,019 - InteractiveLearningGame - INFO - Loaded sprite: scroll from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,023 - InteractiveLearningGame - INFO - Loaded sprite: coin from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,024 - InteractiveLearningGame - INFO - Loaded sprite: background from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Tileset Grass.png
+2024-09-01 23:16:48,026 - InteractiveLearningGame - INFO - Loaded sprite: tree from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Plant.png
+2024-09-01 23:16:48,030 - InteractiveLearningGame - INFO - Loaded sprite: chest from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:16:48,030 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\hr_manager.png
+NoneType: None
+2024-09-01 23:16:48,030 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\it_specialist.png
+NoneType: None
+2024-09-01 23:16:48,031 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\team_lead.png
+NoneType: None
+2024-09-01 23:16:48,031 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\coworker.png
+NoneType: None
+2024-09-01 23:16:48,031 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\kiosk.png
+NoneType: None
+2024-09-01 23:16:48,032 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\terminal.png
+NoneType: None
+2024-09-01 23:16:48,032 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\meeting_room.png
+NoneType: None
+2024-09-01 23:16:48,032 - InteractiveLearningGame - INFO - Loaded font: regular_24
+2024-09-01 23:16:48,032 - InteractiveLearningGame - INFO - Loaded font: regular_32
+2024-09-01 23:16:48,034 - InteractiveLearningGame - INFO - Loaded font: regular_48
+2024-09-01 23:16:48,034 - InteractiveLearningGame - INFO - Loaded font: italic_24
+2024-09-01 23:16:48,034 - InteractiveLearningGame - INFO - Loaded font: italic_32
+2024-09-01 23:16:48,035 - InteractiveLearningGame - INFO - Loaded font: italic_48
+2024-09-01 23:16:48,035 - InteractiveLearningGame - INFO - Loaded font: bold_24
+2024-09-01 23:16:48,035 - InteractiveLearningGame - INFO - Loaded font: bold_32
+2024-09-01 23:16:48,037 - InteractiveLearningGame - INFO - Loaded font: bold_48
+2024-09-01 23:16:48,110 - InteractiveLearningGame - INFO - Loaded sound: menu_music
+2024-09-01 23:16:48,291 - InteractiveLearningGame - INFO - Loaded sound: game_music

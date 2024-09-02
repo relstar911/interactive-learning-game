@@ -1,0 +1,70 @@
+2024-09-01 23:20:45,942 - InteractiveLearningGame - INFO - Initializing GameEngine
+2024-09-01 23:20:46,545 - InteractiveLearningGame - INFO - Loaded sprite: player from C:\Users\ardah\Gehirnbank\sprites\characters\player.png
+2024-09-01 23:20:46,545 - InteractiveLearningGame - INFO - Loaded sprite: npc from C:\Users\ardah\Gehirnbank\sprites\characters\slime.png
+2024-09-01 23:20:46,546 - InteractiveLearningGame - INFO - Loaded sprite: tilemap from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Tileset Grass.png
+2024-09-01 23:20:46,550 - InteractiveLearningGame - INFO - Loaded sprite: tutor from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,555 - InteractiveLearningGame - INFO - Loaded sprite: quizmaster from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,558 - InteractiveLearningGame - INFO - Loaded sprite: gamemaster from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,562 - InteractiveLearningGame - INFO - Loaded sprite: book from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,566 - InteractiveLearningGame - INFO - Loaded sprite: potion from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,570 - InteractiveLearningGame - INFO - Loaded sprite: scroll from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,573 - InteractiveLearningGame - INFO - Loaded sprite: coin from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,575 - InteractiveLearningGame - INFO - Loaded sprite: background from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Tileset Grass.png
+2024-09-01 23:20:46,577 - InteractiveLearningGame - INFO - Loaded sprite: tree from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Plant.png
+2024-09-01 23:20:46,580 - InteractiveLearningGame - INFO - Loaded sprite: chest from C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\TX Props.png
+2024-09-01 23:20:46,581 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\hr_manager.png
+NoneType: None
+2024-09-01 23:20:46,581 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\it_specialist.png
+NoneType: None
+2024-09-01 23:20:46,581 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\team_lead.png
+NoneType: None
+2024-09-01 23:20:46,582 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\characters\coworker.png
+NoneType: None
+2024-09-01 23:20:46,582 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\kiosk.png
+NoneType: None
+2024-09-01 23:20:46,582 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\terminal.png
+NoneType: None
+2024-09-01 23:20:46,582 - InteractiveLearningGame - ERROR - Sprite file not found: C:\Users\ardah\Gehirnbank\sprites\assets\sprites\Texture\meeting_room.png
+NoneType: None
+2024-09-01 23:20:46,583 - InteractiveLearningGame - INFO - Loaded font: regular_24
+2024-09-01 23:20:46,583 - InteractiveLearningGame - INFO - Loaded font: regular_32
+2024-09-01 23:20:46,583 - InteractiveLearningGame - INFO - Loaded font: regular_48
+2024-09-01 23:20:46,584 - InteractiveLearningGame - INFO - Loaded font: italic_24
+2024-09-01 23:20:46,584 - InteractiveLearningGame - INFO - Loaded font: italic_32
+2024-09-01 23:20:46,584 - InteractiveLearningGame - INFO - Loaded font: italic_48
+2024-09-01 23:20:46,585 - InteractiveLearningGame - INFO - Loaded font: bold_24
+2024-09-01 23:20:46,585 - InteractiveLearningGame - INFO - Loaded font: bold_32
+2024-09-01 23:20:46,586 - InteractiveLearningGame - INFO - Loaded font: bold_48
+2024-09-01 23:20:46,662 - InteractiveLearningGame - INFO - Loaded sound: menu_music
+2024-09-01 23:20:46,847 - InteractiveLearningGame - INFO - Loaded sound: game_music
+2024-09-01 23:20:46,852 - InteractiveLearningGame - INFO - MainMenuScene initialized
+2024-09-01 23:20:46,852 - InteractiveLearningGame - DEBUG - Initializing Quiz
+2024-09-01 23:20:46,852 - InteractiveLearningGame - INFO - Entering MainMenuScene
+2024-09-01 23:20:46,852 - InteractiveLearningGame - WARNING - Sound '1354018_288-Autograph-Piano-2023.mp3' nicht gefunden.
+2024-09-01 23:20:46,852 - InteractiveLearningGame - WARNING - Music '1354018_288-Autograph-Piano-2023.mp3' not found
+2024-09-01 23:20:46,852 - InteractiveLearningGame - INFO - Changed to scene: GameState.MAIN_MENU
+2024-09-01 23:20:46,931 - InteractiveLearningGame - INFO - Start music playing
+2024-09-01 23:20:46,931 - InteractiveLearningGame - INFO - GameEngine initialized. Screen size: 800x600
+2024-09-01 23:20:46,932 - InteractiveLearningGame - INFO - Directory exists: C:\Users\ardah\Gehirnbank\sprites
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG - Contents of C:\Users\ardah\Gehirnbank\sprites:
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - assets
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - characters
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - objects
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - particles
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - tilesets
+2024-09-01 23:20:46,933 - InteractiveLearningGame - INFO - Directory exists: C:\Users\ardah\Gehirnbank\sprites\assets\sounds
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG - Contents of C:\Users\ardah\Gehirnbank\sprites\assets\sounds:
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - 1350180_TeleCom-INC.mp3
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - 1352396_I-Gave-Them-Backshots.mp3
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - 1354018_288-Autograph-Piano-2023.mp3
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - 1354837_Timeless-Island-Surreal-x-.mp3
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - item-equip-6904.mp3
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - venv
+2024-09-01 23:20:46,933 - InteractiveLearningGame - INFO - Directory exists: C:\Users\ardah\Gehirnbank\sprites\assets\fonts
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG - Contents of C:\Users\ardah\Gehirnbank\sprites\assets\fonts:
+2024-09-01 23:20:46,933 - InteractiveLearningGame - DEBUG -   - Raleway
+2024-09-01 23:20:46,933 - InteractiveLearningGame - INFO - Starting the game
+2024-09-01 23:20:46,933 - InteractiveLearningGame - INFO - Pygame initialized
+2024-09-01 23:20:46,936 - InteractiveLearningGame - INFO - Initializing MainMenuScene
+2024-09-01 23:20:46,946 - InteractiveLearningGame - INFO - Main menu scene created
+2024-09-01 23:20:46,946 - InteractiveLearningGame - INFO - Game closing

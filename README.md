@@ -1,51 +1,40 @@
-# Interactive Learning Game
+# Interactive Onboarding Game
 
-## Übersicht
-Dieses Projekt ist ein interaktives Lernspiel, das mit Python und Pygame entwickelt wurde. Es zielt darauf ab, neue Mitarbeiter in einem Unternehmen durch ein spielerisches Onboarding-Erlebnis einzuführen.
+An interactive learning game designed to onboard new employees through engaging mini-games, quizzes, and role-playing scenarios.
 
-## Hauptfunktionen
-- Charaktererstellung mit individuellen Namen
-- Interaktive Spielwelt mit NPCs und Objekten
-- Quizsystem zur Überprüfung des Wissens
-- Fortschrittssystem mit Erfahrungspunkten und Leveln
-- Einfaches Inventarsystem
+## Features
 
-## Technische Details
-- Entwickelt mit Python 3.x und Pygame
-- Modulare Struktur mit verschiedenen Szenen (Hauptmenü, Charaktererstellung, Tutorial, Spielwelt, Quiz)
-- Asset-Management-System für einfache Verwaltung von Grafiken, Sounds und Schriftarten
-- Kamerasystem für eine scrollende Spielwelt
-- Kollisionserkennung für Hindernisse und Interaktionen
+- Multiple mini-games including HR Quiz, IT Scenarios, and Leadership Challenges
+- Interactive NPCs with dialogue options
+- Progress tracking system
+- XP and reward system
+- Customizable game settings
 
-## Installation und Ausführung
-1. Stellen Sie sicher, dass Python 3.x installiert ist
-2. Installieren Sie die erforderlichen Pakete: `pip install -r requirements.txt`
-3. Führen Sie das Spiel aus: `python onboarding_game.py`
+## Installation
 
-## Projektstruktur
-- `onboarding_game.py`: Haupteinstiegspunkt des Spiels
-- `game_engine.py`: Zentrale Spiellogik und -schleife
-- `scenes/`: Enthält verschiedene Spielszenen (Hauptmenü, Charaktererstellung, etc.)
-- `assets/`: Enthält Grafiken, Sounds und Schriftarten
-- `config.py`: Konfigurationseinstellungen für das Spiel
-- Verschiedene Hilfsklassen (Player, NPC, Camera, etc.)
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/interactive-onboarding-game.git
+   cd interactive-onboarding-game
+   ```
 
-## Aktueller Stand
-- Grundlegende Spielmechaniken implementiert
-- Charakterbewegung und Kameraverfolgung funktionieren
-- Kollisionserkennung für Hindernisse implementiert
-- Quizsystem grundlegend funktionsfähig
-- Debugging-Ausgaben für einfachere Entwicklung hinzugefügt
+2. Create a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-## Nächste Schritte
-- Verfeinerung der Spielerinteraktionen
-- Erweiterung des Quizsystems
-- Hinzufügen von mehr Inhalten (NPCs, Objekte, Fragen)
-- Verbesserung der visuellen Darstellung
-- Implementierung von Soundeffekten und Musik
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
 
-## Mitwirkende
-Siehe CONTRIBUTING.md für Informationen, wie Sie zum Projekt beitragen können.
+4. Set up environment variables:
+   Create a `.env` file in the root directory and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
-## Lizenz
-[Ihre gewählte Lizenz hier einfügen]
+## Running the Game
+
+To start the game, run:

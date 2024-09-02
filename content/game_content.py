@@ -190,7 +190,9 @@ NPC_DIALOGUES = {
                     {"text": "Will I have a mentor?", "response": "Yes, we assign each new employee a mentor to help guide them through their first few months."}
                 ]
             },
-            {"text": "I'm ready for a challenge", "response": "Great! Let's test your knowledge about HR policies and practices.", "start_game": True}
+            {"text": "I'm ready for a challenge", "response": "Great! Let's test your knowledge about HR policies and practices.", "start_game": True},
+            {"text": "I'd like to take the HR Quiz", "minigame": "hr_quiz"},
+            {"text": "Goodbye", "response": "Have a great day!"}
         ]
     },
     "IT Specialist": {
@@ -220,7 +222,8 @@ NPC_DIALOGUES = {
                     {"text": "What's our policy on password security?", "response": "We require strong passwords with a combination of uppercase letters, lowercase letters, numbers, and special characters."}
                 ]
             },
-            {"text": "I'd like to test my IT problem-solving skills", "response": "Excellent! Let's go through some common IT scenarios.", "start_game": True}
+            {"text": "I'd like to test my IT problem-solving skills", "response": "Excellent! Let's go through some common IT scenarios.", "start_game": True},
+            {"text": "Goodbye", "response": "Have a great day!"}
         ]
     },
     "Team Lead": {
@@ -250,7 +253,8 @@ NPC_DIALOGUES = {
                     {"text": "What if mediation doesn't work?", "response": "In rare cases, if mediation fails, we may involve HR for further intervention."}
                 ]
             },
-            {"text": "I'm interested in leadership challenges", "response": "That's great to hear! Let's go through some leadership scenarios to hone your skills.", "start_game": True}
+            {"text": "I'm interested in leadership challenges", "response": "That's great to hear! Let's go through some leadership scenarios to hone your skills.", "start_game": True},
+            {"text": "Goodbye", "response": "Have a great day!"}
         ]
     },
     "Coworker": {
@@ -281,6 +285,14 @@ NPC_DIALOGUES = {
                 ]
             },
             {"text": "Thanks for the chat!", "response": "No problem at all! Feel free to come chat anytime you need help or just want to talk.", "start_game": False}
+        ]
+    },
+    "Information Kiosk": {
+        "greeting": "Welcome to the Information Kiosk. How can I help you?",
+        "options": [
+            {"text": "Tell me about the company", "response": "Our company is a leader in innovative solutions..."},
+            {"text": "Play a memory game", "minigame": "memory"},
+            {"text": "Goodbye", "response": "Have a great day!"}
         ]
     }
 }

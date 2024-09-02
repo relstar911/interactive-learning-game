@@ -1,4 +1,3 @@
-import pygame
 from src.scenes.base_scene import BaseScene
 from src.core.quiz import Quiz
 from src.scenes.game_world_scene import GameWorldScene

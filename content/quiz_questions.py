@@ -50,3 +50,31 @@ HR_QUESTIONS = [
         "correct": 1
     }
 ]
+
+IT_QUESTIONS = [
+    {
+        "question": "What is the first step in troubleshooting a network issue?",
+        "options": ["Restart the computer", "Check physical connections", "Reinstall the operating system", "Call IT support"],
+        "correct": 1
+    },
+    {
+        "question": "Which of the following is NOT a common cybersecurity threat?",
+        "options": ["Phishing", "Malware", "DDoS attack", "Overclocking"],
+        "correct": 3
+    },
+    {
+        "question": "What does HTTPS stand for?",
+        "options": ["Hypertext Transfer Protocol Secure", "High-Tech Transfer Protocol System", "Hypertext Transmission Protocol Service", "Hyper Transfer Protocol Secure"],
+        "correct": 0
+    },
+    {
+        "question": "Which of these is a best practice for password security?",
+        "options": ["Use the same password for all accounts", "Write down passwords on sticky notes", "Use a combination of letters, numbers, and symbols", "Share passwords with trusted colleagues"],
+        "correct": 2
+    },
+    {
+        "question": "What is the purpose of a firewall?",
+        "options": ["To cool down the computer", "To block unauthorized access", "To increase internet speed", "To store backup data"],
+        "correct": 1
+    }
+]
